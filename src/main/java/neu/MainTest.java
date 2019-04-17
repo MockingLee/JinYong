@@ -12,13 +12,9 @@ public class MainTest {
 
     public static void main(String[] args) {
 // 增加新词,中间按照'\t'隔开
-        String str = "这是一段测试文字";
-        DicLibrary.insert(DicLibrary.DEFAULT, "这是");//设置自定义分词
-        Result result= NlpAnalysis.parse(str);
-        List<Term> termList=result.getTerms();
-        for(Term term:termList){
-            System.out.println(term.getName()+":"+term.getNatureStr());
-        }
+        String s = "1#2#4#";
+        int a = s.lastIndexOf("#");
+        s.indexOf("#");
 
     }
 }
